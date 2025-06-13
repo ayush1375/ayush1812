@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Memory Concepts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+<h1>📘 Computer Memory Concepts</h1>
+
+<h2>1. Main Memory: RAM & ROM</h2>
+<h3>🔹 RAM (Random Access Memory)</h3>
+<ul>
+    <li>1. Temporary memory hoti hai.</li>
+    <li>2. Computer chal raha hota hai tab hi kaam karti hai.</li>
+    <li>3. Power off hote hi data delete ho jata hai.</li>
+    <li>4. Programs RAM mein load hote hain execution ke liye.</li>
+    <li>5. Fast access milta hai CPU ko.</li>
+    <li>6. Volatile memory kehlati hai.</li>
+    <li>7. Do type ke hote hain: Static RAM (SRAM) & Dynamic RAM (DRAM).</li>
+    <li>8. DRAM sasti hoti hai par slow, SRAM mehengi par fast.</li>
+    <li>9. RAM ka size jitna zyada, multitasking utni fast.</li>
+    <li>10. Upgradeable hoti hai desktop/laptop mein. 💻</li>
+</ul>
+
+<h3>🔹 ROM (Read Only Memory)</h3>
+<ul>
+    <li>1. Permanent memory hoti hai.</li>
+    <li>2. Power off hone par bhi data safe rehta hai.</li>
+    <li>3. Isme BIOS store hota hai.</li>
+    <li>4. Computer ke boot hone mein help karta hai.</li>
+    <li>5. Non-volatile memory hai.</li>
+    <li>6. Data write karna mushkil ya impossible hota hai.</li>
+    <li>7. Types: PROM, EPROM, EEPROM.</li>
+    <li>8. Embedded systems mein use hoti hai.</li>
+    <li>9. Security ke liye bhi ROM use hoti hai.</li>
+    <li>10. Factory ke time pe program hoti hai. 🏭</li>
+</ul>
+
+<h2>2. Secondary Memory</h2>
+<ul>
+    <li>1. Long-term data storage ke liye use hoti hai.</li>
+    <li>2. Non-volatile hoti hai – power off par bhi data safe.</li>
+    <li>3. CPU direct access nahi karta, time lagta hai.</li>
+    <li>4. Cost per GB RAM se kam hoti hai.</li>
+    <li>5. HDD (Hard Disk Drive) sabse common type hai.</li>
+    <li>6. SSD (Solid State Drive) fast aur durable hoti hai.</li>
+    <li>7. Magnetic Tape – backup ke liye use hoti hai (old tech).</li>
+    <li>8. Optical Disk – CD, DVD (read by laser).</li>
+    <li>9. Pen Drive, Memory Card bhi secondary memory hain.</li>
+    <li>10. Cloud storage bhi modern secondary memory ka part hai. ☁️</li>
+</ul>
+
+<h2>3. Cache Memory</h2>
+<ul>
+    <li>1. Super fast memory, CPU ke bohot paas hoti hai.</li>
+    <li>2. Frequently used data store karti hai.</li>
+    <li>3. RAM se bhi fast hoti hai.</li>
+    <li>4. Size chhoti hoti hai – MBs mein hoti hai.</li>
+    <li>5. CPU ko baar-baar RAM se data nahi mangaana padta.</li>
+    <li>6. L1, L2, L3 levels mein divided hoti hai.</li>
+    <li>7. L1 fastest hoti hai (but smallest).</li>
+    <li>8. L3 slowest but biggest (among cache levels).</li>
+    <li>9. Speed ko drastically improve karta hai.</li>
+    <li>10. Expensive hoti hai isliye limited size hoti hai. 🧠⚡</li>
+</ul>
+
+<h2>4. Cache Structure & Design</h2>
+<ul>
+    <li>1. L1, L2, L3 levels of cache hote hain.</li>
+    <li>2. L1 CPU ke andar hoti hai – fastest access.</li>
+    <li>3. L2 thodi badi hoti hai – thoda slow.</li>
+    <li>4. L3 sabse badi aur common hoti hai multiple cores ke liye.</li>
+    <li>5. Each cache block has a <strong>Tag</strong>, <strong>Index</strong>, and <strong>Data</strong>.</li>
+    <li>6. Tag – memory address identify karta hai.</li>
+    <li>7. Index – block ki position batata hai.</li>
+    <li>8. Cache hit – data mil jata hai, fast.</li>
+    <li>9. Cache miss – data RAM se lana padta hai, slow.</li>
+    <li>10. Cache hierarchy performance optimize karti hai. 🧱</li>
+</ul>
+
+<h2>5. Cache Mapping Schemes</h2>
+<ul>
+    <li>1. Mapping decide karta hai data cache mein kahan jaayega.</li>
+    <li>2. <strong>Direct Mapping</strong> – har memory block ka ek fix cache block hota hai.</li>
+    <li>3. Simple but collision hoti hai.</li>
+    <li>4. <strong>Associative Mapping</strong> – koi bhi memory block kisi bhi cache block mein ja sakta hai.</li>
+    <li>5. Flexible par slow searching.</li>
+    <li>6. <strong>Set Associative Mapping</strong> – mix of both.</li>
+    <li>7. Cache blocks sets mein divided hote hain.</li>
+    <li>8. Har set mein multiple lines hoti hain.</li>
+    <li>9. Performance aur flexibility ka balance deta hai.</li>
+    <li>10. Mostly set-associative mapping hi use hoti hai. 📊</li>
+</ul>
+
+<h2>6. Cache Replacement Algorithms</h2>
+<ul>
+    <li>1. Jab cache full ho jaata hai, old data replace karna padta hai.</li>
+    <li>2. <strong>LRU (Least Recently Used)</strong> – jo sabse pehle use hua tha, use hatao.</li>
+    <li>3. <strong>FIFO (First In First Out)</strong> – jo pehle aaya, pehle gaya.</li>
+    <li>4. <strong>Random</strong> – koi bhi random block hata dete hain.</li>
+    <li>5. Replacement se performance effect hoti hai.</li>
+    <li>6. LRU zyada smart hota hai but complex.</li>
+    <li>7. FIFO simple par inefficient hota hai kabhi-kabhi.</li>
+    <li>8. Random fast but unpredictable.</li>
+    <li>9. Efficient algorithm system performance boost karta hai.</li>
+    <li>10. Hardware level pe hi ye algorithms implement hote hain. 🔄</li>
+</ul>
+
+<h2>7. Improving Cache Performance</h2>
+<ul>
+    <li>1. Bigger cache size se performance better hoti hai.</li>
+    <li>2. Higher associativity se conflict miss reduce hote hain.</li>
+    <li>3. Better replacement policy se effective data store hota hai.</li>
+    <li>4. Data locality (temporal & spatial) ka use hota hai.</li>
+    <li>5. Prefetching se future data pehle hi cache mein aa jata hai.</li>
+    <li>6. Write policies bhi impact karte hain (write-back, write-through).</li>
+    <li>7. Multilevel cache (L1, L2, L3) se speed optimize hoti hai.</li>
+    <li>8. Pipeline CPU ke saath perfect sync banata hai.</li>
+    <li>9. Compiler optimizations bhi help karte hain.</li>
+    <li>10. Design smart ho to latency aur miss rate dono kam hote hain. 🚀</li>
+</ul>
+
+<h2>8. Virtual Memory</h2>
+<ul>
+    <li>1. Jab RAM full ho jaata hai to system hard disk ka part use karta hai.</li>
+    <li>2. Isse zyada programs ek saath run kar sakte hain.</li>
+    <li>3. Logical address space bada lagta hai user ko.</li>
+    <li>4. <strong>Paging</strong> – memory ko small blocks (pages) mein divide karta hai.</li>
+    <li>5. <strong>Page Table</strong> – virtual to physical address mapping karta hai.</li>
+    <li>6. Thrashing – jab zyada paging hoti hai to slow down ho jata hai.</li>
+    <li>7. Data RAM mein nahi hota to <strong>Page Fault</strong> aata hai.</li>
+    <li>8. Virtual memory OS ke under kaam karti hai.</li>
+    <li>9. SSD hone se virtual memory ka speed improve hota hai.</li>
+    <li>10. Performance & multitasking dono ko balance karta hai. 💡</li>
+</ul>
+
+<h2>9. Memory Management Hardware</h2>
+<ul>
+    <li>1. Memory ko manage karne ke liye hardware help karta hai.</li>
+    <li>2. MMU (Memory Management Unit) iska main part hai.</li>
+    <li>3. MMU logical address ko physical address mein badalta hai.</li>
+    <li>4. Page table MMU ke saath hi kaam karta hai.</li>
+    <li>5. TLB (Translation Lookaside Buffer) fast address translation karta hai.</li>
+    <li>6. CPU & RAM ke beech memory access ka bridge hai.</li>
+    <li>7. Protection & isolation bhi MMU karta hai.</li>
+    <li>8. Virtual memory support bhi hardware se hota hai.</li>
+    <li>9. Multitasking secure banata hai.</li>
+    <li>10. Without MMU, modern OS kaam nahi kar paata. 🧠🔧</li>
+</ul>
+
+</body>
+</html>
